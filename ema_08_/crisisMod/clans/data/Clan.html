@@ -78,6 +78,15 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Clan</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents a clan in the Crisis Mod system.
+ A clan is a group of players with hierarchical roles, shared resources (dead marks),
+ and relationship management with other clans.</div>
+<dl class="notes">
+<dt>Version:</dt>
+<dd>1.0</dd>
+<dt>Author:</dt>
+<dd>SchlangeGoto</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -90,7 +99,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String)" class="member-name-link">Clan</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a new clan with the specified name.</div>
+</div>
 </div>
 </section>
 </li>
@@ -107,51 +118,95 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addDeathMarks(int)" class="member-name-link">addDeathMarks</a><wbr>(int&nbsp;amount)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds dead marks to the clan bank.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addMember(java.util.UUID)" class="member-name-link">addMember</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds a new member to the clan with the default SOLDIER role.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeadMarks()" class="member-name-link">getDeadMarks</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the current amount of dead marks in the clan bank.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMemberRole(java.util.UUID)" class="member-name-link">getMemberRole</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the role of a specific member.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMembers()" class="member-name-link">getMembers</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets a list of all member UUIDs in the clan.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the name of the clan.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPlayersWithRole(ema_08_.crisisMod.clans.data.ClanRole)" class="member-name-link">getPlayersWithRole</a><wbr>(<a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets all players with the specified role.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRelation(java.util.UUID)" class="member-name-link">getRelation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the relationship between this clan and another clan.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getUUID()" class="member-name-link">getUUID</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the unique identifier of this clan.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeDeathMarks(int)" class="member-name-link">removeDeathMarks</a><wbr>(int&nbsp;amount)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Removes dead marks from the clan bank.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeMember(java.util.UUID)" class="member-name-link">removeMember</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Removes a member from the clan.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#sendMessageToRole(ema_08_.crisisMod.clans.data.ClanRole,java.lang.String)" class="member-name-link">sendMessageToRole</a><wbr>(<a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sends a message to all players with the specified role.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#sendMessageToRole(ema_08_.crisisMod.clans.data.ClanRole,java.lang.String,net.minecraft.ChatFormatting...)" class="member-name-link">sendMessageToRole</a><wbr>(<a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
  net.minecraft.ChatFormatting...&nbsp;formats)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sends a formatted message to all players with the specified role.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setName(java.lang.String)" class="member-name-link">setName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMemberRole(java.util.UUID,ema_08_.crisisMod.clans.data.ClanRole)" class="member-name-link">setMemberRole</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID,
+ <a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the role of a specific member.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRelation(java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">setRelation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clanUUID,
- <a href="ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setName(java.lang.String)" class="member-name-link">setName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the name of the clan.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withdraw(java.util.UUID,long)" class="member-name-link">withdraw</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;player,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRelation(java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">setRelation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clanUUID,
+ <a href="ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the relationship between this clan and another clan.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withdraw(java.util.UUID,long)" class="member-name-link">withdraw</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;player,
  long&nbsp;amount)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Allows a player to withdraw dead marks from the clan bank.</div>
+</div>
 </div>
 </div>
 </div>
@@ -173,6 +228,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(java.lang.String)">
 <h3>Clan</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Clan</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Creates a new clan with the specified name.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the name of the clan</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if name is null</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -188,54 +250,127 @@ loadScripts(document, 'script');</script>
 <h3>setRelation</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setRelation</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clanUUID,
  <a href="ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</span></div>
+<div class="block">Sets the relationship between this clan and another clan.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>clanUUID</code> - the UUID of the target clan</dd>
+<dd><code>relation</code> - the relationship type to set</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if clanUUID is null, equals this clan's UUID, or relation is null</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getRelation(java.util.UUID)">
 <h3>getRelation</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span>&nbsp;<span class="element-name">getRelation</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan)</span></div>
+<div class="block">Gets the relationship between this clan and another clan.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>clan</code> - the UUID of the target clan</dd>
+<dt>Returns:</dt>
+<dd>the relationship type (defaults to NEUTRAL if not set)</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if clan UUID equals this clan's UUID or the clan doesn't exist</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addDeathMarks(int)">
 <h3>addDeathMarks</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addDeathMarks</span><wbr><span class="parameters">(int&nbsp;amount)</span></div>
+<div class="block">Adds dead marks to the clan bank.
+ If the amount exceeds the maximum, it's capped and leadership roles are notified.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>amount</code> - the amount of dead marks to add</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if amount is negative</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeDeathMarks(int)">
 <h3>removeDeathMarks</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeDeathMarks</span><wbr><span class="parameters">(int&nbsp;amount)</span></div>
+<div class="block">Removes dead marks from the clan bank.
+ The amount is capped to prevent negative values.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>amount</code> - the amount of dead marks to remove</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if amount is negative</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setName(java.lang.String)">
 <h3>setName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Sets the name of the clan.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the new name for the clan</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addMember(java.util.UUID)">
 <h3>addMember</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addMember</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID)</span></div>
+<div class="block">Adds a new member to the clan with the default SOLDIER role.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>memberUUID</code> - the UUID of the player to add</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if memberUUID is null or the member is already in the clan</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeMember(java.util.UUID)">
 <h3>removeMember</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeMember</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID)</span></div>
+<div class="block">Removes a member from the clan.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>memberUUID</code> - the UUID of the member to remove</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if memberUUID is null or the member is not in the clan</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getUUID()">
 <h3>getUUID</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></span>&nbsp;<span class="element-name">getUUID</span>()</div>
+<div class="block">Gets the unique identifier of this clan.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the clan's UUID</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getMembers()">
 <h3>getMembers</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;</span>&nbsp;<span class="element-name">getMembers</span>()</div>
+<div class="block">Gets a list of all member UUIDs in the clan.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new list containing all member UUIDs</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getDeadMarks()">
+<h3>getDeadMarks</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">getDeadMarks</span>()</div>
+<div class="block">Gets the current amount of dead marks in the clan bank.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the amount of dead marks</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -243,6 +378,16 @@ loadScripts(document, 'script');</script>
 <h3>withdraw</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">withdraw</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;player,
  long&nbsp;amount)</span></div>
+<div class="block">Allows a player to withdraw dead marks from the clan bank.
+ The player must have withdrawal permissions and be a clan member.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - the UUID of the player withdrawing</dd>
+<dd><code>amount</code> - the amount to withdraw</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if player is null, amount is not positive, or player is not a member</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html" title="class or interface in java.lang" class="external-link">SecurityException</a></code> - if the player doesn't have withdrawal permissions</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -250,6 +395,12 @@ loadScripts(document, 'script');</script>
 <h3>sendMessageToRole</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">sendMessageToRole</span><wbr><span class="parameters">(<a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</span></div>
+<div class="block">Sends a message to all players with the specified role.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>role</code> - the role to send the message to</dd>
+<dd><code>message</code> - the message to send</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -258,18 +409,65 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">sendMessageToRole</span><wbr><span class="parameters">(<a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
  net.minecraft.ChatFormatting...&nbsp;formats)</span></div>
+<div class="block">Sends a formatted message to all players with the specified role.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>role</code> - the role to send the message to</dd>
+<dd><code>message</code> - the message to send</dd>
+<dd><code>formats</code> - the chat formatting options to apply</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPlayersWithRole(ema_08_.crisisMod.clans.data.ClanRole)">
 <h3>getPlayersWithRole</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;</span>&nbsp;<span class="element-name">getPlayersWithRole</span><wbr><span class="parameters">(<a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role)</span></div>
+<div class="block">Gets all players with the specified role.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>role</code> - the role to search for</dd>
+<dt>Returns:</dt>
+<dd>a list of player UUIDs with the specified role</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getName()">
 <h3>getName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getName</span>()</div>
+<div class="block">Gets the name of the clan.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the clan name</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getMemberRole(java.util.UUID)">
+<h3>getMemberRole</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a></span>&nbsp;<span class="element-name">getMemberRole</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID)</span></div>
+<div class="block">Gets the role of a specific member.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>memberUUID</code> - the UUID of the member</dd>
+<dt>Returns:</dt>
+<dd>the member's role, or null if not found</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setMemberRole(java.util.UUID,ema_08_.crisisMod.clans.data.ClanRole)">
+<h3>setMemberRole</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setMemberRole</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;memberUUID,
+ <a href="ClanRole.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRole</a>&nbsp;role)</span></div>
+<div class="block">Sets the role of a specific member.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>memberUUID</code> - the UUID of the member</dd>
+<dd><code>role</code> - the new role to assign</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if memberUUID is null, role is null, or member is not in the clan</dd>
+</dl>
 </section>
 </li>
 </ul>

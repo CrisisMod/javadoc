@@ -78,6 +78,15 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">ClanManager</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Singleton manager class for handling clan operations and queries.
+ Provides thread-safe methods for managing clans, checking memberships,
+ and performing clan-related operations.</div>
+<dl class="notes">
+<dt>Version:</dt>
+<dd>1.0</dd>
+<dt>Author:</dt>
+<dd>SchlangeGoto</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -94,26 +103,40 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#addClan(java.lang.String)" class="member-name-link">addClan</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Creates and adds a new clan with the specified name.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#areInSameClan(java.util.UUID,java.util.UUID)" class="member-name-link">areInSameClan</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;player1,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;player2)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Checks if two players are members of the same clan.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getClanObjectFromUUID(java.util.UUID)" class="member-name-link">getClanObjectFromUUID</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Retrieves a clan by its unique identifier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getClanOfPlayer(java.util.UUID)" class="member-name-link">getClanOfPlayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Finds the clan that a specific player belongs to.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isClanNameFree(java.lang.String)" class="member-name-link">isClanNameFree</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Checks if a clan name is available for use.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#removeClan(ema_08_.crisisMod.clans.data.Clan)" class="member-name-link">removeClan</a><wbr>(<a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&nbsp;clan)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Removes a clan from the system.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static net.minecraft.server.level.ServerPlayer</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#uuidToServerPlayer(java.util.UUID)" class="member-name-link">uuidToServerPlayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Converts a player UUID to a ServerPlayer instance.</div>
+</div>
 </div>
 </div>
 </div>
@@ -135,30 +158,66 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="addClan(java.lang.String)">
 <h3>addClan</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addClan</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Creates and adds a new clan with the specified name.
+ This method is thread-safe and ensures clan names are unique.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the name for the new clan</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if a clan with this name already exists</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeClan(ema_08_.crisisMod.clans.data.Clan)">
 <h3>removeClan</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeClan</span><wbr><span class="parameters">(<a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&nbsp;clan)</span></div>
+<div class="block">Removes a clan from the system.
+ This method is thread-safe.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>clan</code> - the clan to remove</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getClanObjectFromUUID(java.util.UUID)">
 <h3>getClanObjectFromUUID</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></span>&nbsp;<span class="element-name">getClanObjectFromUUID</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</span></div>
+<div class="block">Retrieves a clan by its unique identifier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - the UUID of the clan to find</dd>
+<dt>Returns:</dt>
+<dd>the clan with the specified UUID, or null if not found</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getClanOfPlayer(java.util.UUID)">
 <h3>getClanOfPlayer</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></span>&nbsp;<span class="element-name">getClanOfPlayer</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</span></div>
+<div class="block">Finds the clan that a specific player belongs to.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - the UUID of the player</dd>
+<dt>Returns:</dt>
+<dd>the clan containing the player, or null if the player is not in any clan</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isClanNameFree(java.lang.String)">
 <h3>isClanNameFree</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isClanNameFree</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Checks if a clan name is available for use.
+ The check is case-insensitive.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the name to check</dd>
+<dt>Returns:</dt>
+<dd>true if the name is available, false if it's already taken</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -166,12 +225,31 @@ loadScripts(document, 'script');</script>
 <h3>areInSameClan</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">areInSameClan</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;player1,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;player2)</span></div>
+<div class="block">Checks if two players are members of the same clan.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player1</code> - the UUID of the first player</dd>
+<dd><code>player2</code> - the UUID of the second player</dd>
+<dt>Returns:</dt>
+<dd>true if both players are in the same clan, false otherwise</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="uuidToServerPlayer(java.util.UUID)">
 <h3>uuidToServerPlayer</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">net.minecraft.server.level.ServerPlayer</span>&nbsp;<span class="element-name">uuidToServerPlayer</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</span></div>
+<div class="block">Converts a player UUID to a ServerPlayer instance.
+ This utility method handles server access and validation.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - the UUID of the player</dd>
+<dt>Returns:</dt>
+<dd>the ServerPlayer instance</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the UUID is null</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - if the server is not available</dd>
+</dl>
 </section>
 </li>
 </ul>
