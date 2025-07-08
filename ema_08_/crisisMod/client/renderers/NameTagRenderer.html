@@ -78,6 +78,21 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">NameTagRenderer</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Client-side renderer that modifies player nametags based on clan relationships.
+ This class handles the visual representation of clan affiliations by changing
+ nametag colors and visibility based on clan relationships and distance.
+ 
+ Color coding:
+ - Green: Same clan members
+ - Blue: Allied clan members
+ - Red: Enemy clan members (within 3 blocks)
+ - Hidden: Non-clan members beyond 3 blocks, enemies beyond 3 blocks</div>
+<dl class="notes">
+<dt>Version:</dt>
+<dd>1.0</dd>
+<dt>Author:</dt>
+<dd>SchlangeGoto</dd>
+</dl>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -107,7 +122,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onRenderNameTag(net.minecraftforge.client.event.RenderNameTagEvent)" class="member-name-link">onRenderNameTag</a><wbr>(net.minecraftforge.client.event.RenderNameTagEvent&nbsp;event)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Handles the rendering of player nametags based on clan relationships.</div>
+</div>
 </div>
 </div>
 </div>
@@ -143,6 +160,19 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="onRenderNameTag(net.minecraftforge.client.event.RenderNameTagEvent)">
 <h3>onRenderNameTag</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onRenderNameTag</span><wbr><span class="parameters">(net.minecraftforge.client.event.RenderNameTagEvent&nbsp;event)</span></div>
+<div class="block">Handles the rendering of player nametags based on clan relationships.
+ This method is called whenever a player nametag is about to be rendered.
+ 
+ The method applies the following logic:
+ - Own nametag: No modification
+ - Same clan: Green color
+ - Allied clan: Blue color
+ - Enemy clan: Red color (only within 3 blocks)
+ - No clan: Hidden beyond 3 blocks</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>event</code> - the RenderNameTagEvent containing rendering information</dd>
+</dl>
 </section>
 </li>
 </ul>
