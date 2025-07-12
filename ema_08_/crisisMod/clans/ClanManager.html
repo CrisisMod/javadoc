@@ -112,6 +112,15 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Checks if two players are members of the same clan.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getAllClans()" class="member-name-link">getAllClans</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getClanObjectFromName(java.lang.String)" class="member-name-link">getClanObjectFromName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">NOT RECOMMENDED!!
+ Retrieves a clan by its name.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getClanObjectFromUUID(java.util.UUID)" class="member-name-link">getClanObjectFromUUID</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -132,9 +141,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Removes a clan from the system.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static net.minecraft.server.level.ServerPlayer</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#uuidToServerPlayer(java.util.UUID)" class="member-name-link">uuidToServerPlayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setClanRelation(java.util.UUID,java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">setClanRelation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan1,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan2,
+ <a href="data/ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static net.minecraft.server.level.ServerPlayer</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#uuidToServerPlayer(java.util.UUID)" class="member-name-link">uuidToServerPlayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Converts a player UUID to a ServerPlayer instance.</div>
 </div>
 </div>
@@ -190,6 +204,20 @@ loadScripts(document, 'script');</script>
 <dd><code>uuid</code> - the UUID of the clan to find</dd>
 <dt>Returns:</dt>
 <dd>the clan with the specified UUID, or null if not found</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getClanObjectFromName(java.lang.String)">
+<h3>getClanObjectFromName</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></span>&nbsp;<span class="element-name">getClanObjectFromName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">NOT RECOMMENDED!!
+ Retrieves a clan by its name.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the Name of the clan to find</dd>
+<dt>Returns:</dt>
+<dd>the clan with the specified name, or null if not found</dd>
 </dl>
 </section>
 </li>
@@ -250,6 +278,20 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if the UUID is null</dd>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - if the server is not available</dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getAllClans()">
+<h3>getAllClans</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="data/Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&gt;</span>&nbsp;<span class="element-name">getAllClans</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="setClanRelation(java.util.UUID,java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)">
+<h3>setClanRelation</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setClanRelation</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan1,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan2,
+ <a href="data/ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</span></div>
 </section>
 </li>
 </ul>

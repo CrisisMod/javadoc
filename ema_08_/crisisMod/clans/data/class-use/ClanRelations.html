@@ -54,11 +54,42 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Package</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><a href="#ema_08_.crisisMod.clans.data">ema_08_.crisisMod.clans.data</a></div>
+<div class="col-first even-row-color"><a href="#ema_08_.crisisMod.clans">ema_08_.crisisMod.clans</a></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="#ema_08_.crisisMod.clans.data">ema_08_.crisisMod.clans.data</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#ema_08_.crisisMod.clans.network">ema_08_.crisisMod.clans.network</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="#ema_08_.crisisMod.clans.relations">ema_08_.crisisMod.clans.relations</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><a href="#ema_08_.crisisMod.client">ema_08_.crisisMod.client</a></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><a href="#ema_08_.crisisMod.network.packets">ema_08_.crisisMod.network.packets</a></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 <section class="class-uses">
 <ul class="block-list">
+<li>
+<section class="detail" id="ema_08_.crisisMod.clans">
+<h2>Uses of <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a> in <a href="../../package-summary.html">ema_08_.crisisMod.clans</a></h2>
+<div class="caption"><span>Methods in <a href="../../package-summary.html">ema_08_.crisisMod.clans</a> with parameters of type <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static void</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">ClanNotificationHandler.</span><code><a href="../../ClanNotificationHandler.html#sendRelationChangeMessage(ema_08_.crisisMod.clans.data.Clan,ema_08_.crisisMod.clans.data.Clan,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">sendRelationChangeMessage</a><wbr>(<a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&nbsp;clan1,
+ <a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&nbsp;clan2,
+ <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static void</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">ClanManager.</span><code><a href="../../ClanManager.html#setClanRelation(java.util.UUID,java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">setClanRelation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan1,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan2,
+ <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <li>
 <section class="detail" id="ema_08_.crisisMod.clans.data">
 <h2>Uses of <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a> in <a href="../package-summary.html">ema_08_.crisisMod.clans.data</a></h2>
@@ -95,6 +126,91 @@ the order they are declared.</div>
 <div class="col-last even-row-color">
 <div class="block">Sets the relationship between this clan and another clan.</div>
 </div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ema_08_.crisisMod.clans.network">
+<h2>Uses of <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a> in <a href="../../network/package-summary.html">ema_08_.crisisMod.clans.network</a></h2>
+<div class="caption"><span>Methods in <a href="../../network/package-summary.html">ema_08_.crisisMod.clans.network</a> with parameters of type <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static void</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">ClanNetworkManager.</span><code><a href="../../network/ClanNetworkManager.html#broadcastClanRelationUpdate(java.util.UUID,java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">broadcastClanRelationUpdate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan1UUID,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan2UUID,
+ <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last even-row-color">
+<div class="block">Notifies all players when clan relations change</div>
+</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ema_08_.crisisMod.clans.relations">
+<h2>Uses of <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a> in <a href="../../relations/package-summary.html">ema_08_.crisisMod.clans.relations</a></h2>
+<div class="caption"><span>Methods in <a href="../../relations/package-summary.html">ema_08_.crisisMod.clans.relations</a> that return <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code><a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">RelationRequest.</span><code><a href="../../relations/RelationRequest.html#getRelation()" class="member-name-link">getRelation</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+<div class="caption"><span>Constructors in <a href="../../relations/package-summary.html">ema_08_.crisisMod.clans.relations</a> with parameters of type <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier</div>
+<div class="table-header col-second">Constructor</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../relations/RelationRequest.html#%3Cinit%3E(java.util.UUID,java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">RelationRequest</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clanRequester,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clanGetter,
+ <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ema_08_.crisisMod.client">
+<h2>Uses of <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a> in <a href="../../../client/package-summary.html">ema_08_.crisisMod.client</a></h2>
+<div class="caption"><span>Methods in <a href="../../../client/package-summary.html">ema_08_.crisisMod.client</a> that return <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code><a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">ClientClanData.</span><code><a href="../../../client/ClientClanData.html#getClanRelation(java.util.UUID,java.util.UUID)" class="member-name-link">getClanRelation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan1,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan2)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+<div class="caption"><span>Methods in <a href="../../../client/package-summary.html">ema_08_.crisisMod.client</a> with parameters of type <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>void</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">ClientClanData.</span><code><a href="../../../client/ClientClanData.html#setClanRelation(java.util.UUID,java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">setClanRelation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan1,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan2,
+ <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ema_08_.crisisMod.network.packets">
+<h2>Uses of <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a> in <a href="../../../network/packets/package-summary.html">ema_08_.crisisMod.network.packets</a></h2>
+<div class="caption"><span>Constructors in <a href="../../../network/packets/package-summary.html">ema_08_.crisisMod.network.packets</a> with parameters of type <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier</div>
+<div class="table-header col-second">Constructor</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="../../../network/packets/ClanRelationUpdatePacket.html#%3Cinit%3E(java.util.UUID,java.util.UUID,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">ClanRelationUpdatePacket</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan1UUID,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;clan2UUID,
+ <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>

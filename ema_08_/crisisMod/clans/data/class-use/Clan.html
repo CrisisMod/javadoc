@@ -68,15 +68,30 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static <a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ClanManager.</span><code><a href="../../ClanManager.html#getClanObjectFromUUID(java.util.UUID)" class="member-name-link">getClanObjectFromUUID</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">ClanManager.</span><code><a href="../../ClanManager.html#getClanObjectFromName(java.lang.String)" class="member-name-link">getClanObjectFromName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Retrieves a clan by its unique identifier.</div>
+<div class="block">NOT RECOMMENDED!!
+ Retrieves a clan by its name.</div>
 </div>
 <div class="col-first odd-row-color"><code>static <a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">ClanManager.</span><code><a href="../../ClanManager.html#getClanOfPlayer(java.util.UUID)" class="member-name-link">getClanOfPlayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">ClanManager.</span><code><a href="../../ClanManager.html#getClanObjectFromUUID(java.util.UUID)" class="member-name-link">getClanObjectFromUUID</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
 <div class="col-last odd-row-color">
+<div class="block">Retrieves a clan by its unique identifier.</div>
+</div>
+<div class="col-first even-row-color"><code>static <a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">ClanManager.</span><code><a href="../../ClanManager.html#getClanOfPlayer(java.util.UUID)" class="member-name-link">getClanOfPlayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;uuid)</code></div>
+<div class="col-last even-row-color">
 <div class="block">Finds the clan that a specific player belongs to.</div>
 </div>
+</div>
+<div class="caption"><span>Methods in <a href="../../package-summary.html">ema_08_.crisisMod.clans</a> that return types with arguments of type <a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&gt;</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">ClanManager.</span><code><a href="../../ClanManager.html#getAllClans()" class="member-name-link">getAllClans</a>()</code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="caption"><span>Methods in <a href="../../package-summary.html">ema_08_.crisisMod.clans</a> with parameters of type <a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a></span></div>
 <div class="summary-table three-column-summary">
@@ -88,6 +103,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Removes a clan from the system.</div>
 </div>
+<div class="col-first odd-row-color"><code>static void</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">ClanNotificationHandler.</span><code><a href="../../ClanNotificationHandler.html#sendRelationChangeMessage(ema_08_.crisisMod.clans.data.Clan,ema_08_.crisisMod.clans.data.Clan,ema_08_.crisisMod.clans.data.ClanRelations)" class="member-name-link">sendRelationChangeMessage</a><wbr>(<a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&nbsp;clan1,
+ <a href="../Clan.html" title="class in ema_08_.crisisMod.clans.data">Clan</a>&nbsp;clan2,
+ <a href="../ClanRelations.html" title="enum class in ema_08_.crisisMod.clans.data">ClanRelations</a>&nbsp;relation)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>

@@ -5,7 +5,10 @@ ema_08_.crisisMod.blockEntities.props
 ema_08_.crisisMod.blocks
 ema_08_.crisisMod.blocks.props
 ema_08_.crisisMod.clans
+ema_08_.crisisMod.clans.commands
 ema_08_.crisisMod.clans.data
+ema_08_.crisisMod.clans.network
+ema_08_.crisisMod.clans.relations
 ema_08_.crisisMod.client
 ema_08_.crisisMod.client.guis
 ema_08_.crisisMod.client.models
