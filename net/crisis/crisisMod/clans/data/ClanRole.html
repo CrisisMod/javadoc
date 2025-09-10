@@ -85,14 +85,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">ClanRole</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="ClanRole.html" title="enum class in net.crisis.crisisMod.clans.data">ClanRole</a>&gt;</span></div>
-<div class="block">Defines the hierarchical roles within a clan and their associated permissions.
- Each role has specific capabilities that determine what actions a player can perform.</div>
-<dl class="notes">
-<dt>Version:</dt>
-<dd>1.0</dd>
-<dt>Author:</dt>
-<dd>SchlangeGoto</dd>
-</dl>
+<div class="block">Defines the hierarchical roles within a clan and their associated permissions.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -119,8 +112,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color"><code><a href="#LEADER" class="member-name-link">LEADER</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Highest rank with full permissions including disbanding the clan 
- and promoting others to leader status</div>
+<div class="block">Highest rank with full permissions including disbanding and leadership transfers</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#LIEUTENANT" class="member-name-link">LIEUTENANT</a></code></div>
 <div class="col-last even-row-color">
@@ -150,49 +142,31 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canDisband()" class="member-name-link">canDisband</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can disband the clan.</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canInvite()" class="member-name-link">canInvite</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can invite new members.</div>
-</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canKickOffline()" class="member-name-link">canKickOffline</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can kick offline members.</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canKickOnline()" class="member-name-link">canKickOnline</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can kick online members.</div>
-</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canPromoteToCaptain()" class="member-name-link">canPromoteToCaptain</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can promote members to captain.</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canPromoteToLeader()" class="member-name-link">canPromoteToLeader</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can promote members to leader.</div>
-</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canRenameClan()" class="member-name-link">canRenameClan</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can rename the clan.</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canSetPrivatePublic()" class="member-name-link">canSetPrivatePublic</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can change the clan's privacy settings.</div>
-</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#canWithdraw()" class="member-name-link">canWithdraw</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if this role can withdraw from the clan bank.</div>
-</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ClanRole.html" title="enum class in net.crisis.crisisMod.clans.data">ClanRole</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(java.lang.String)" class="member-name-link">valueOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -228,8 +202,7 @@ the order they are declared.</div>
 <section class="detail" id="LEADER">
 <h3>LEADER</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="ClanRole.html" title="enum class in net.crisis.crisisMod.clans.data">ClanRole</a></span>&nbsp;<span class="element-name">LEADER</span></div>
-<div class="block">Highest rank with full permissions including disbanding the clan 
- and promoting others to leader status</div>
+<div class="block">Highest rank with full permissions including disbanding and leadership transfers</div>
 </section>
 </li>
 <li>
@@ -303,99 +276,54 @@ not permitted.)</div>
 <section class="detail" id="canInvite()">
 <h3>canInvite</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canInvite</span>()</div>
-<div class="block">Checks if this role can invite new members.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can invite members</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canWithdraw()">
 <h3>canWithdraw</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canWithdraw</span>()</div>
-<div class="block">Checks if this role can withdraw from the clan bank.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can withdraw funds</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canPromoteToCaptain()">
 <h3>canPromoteToCaptain</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canPromoteToCaptain</span>()</div>
-<div class="block">Checks if this role can promote members to captain.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can promote to captain</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canKickOnline()">
 <h3>canKickOnline</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canKickOnline</span>()</div>
-<div class="block">Checks if this role can kick online members.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can kick online members</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canPromoteToLeader()">
 <h3>canPromoteToLeader</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canPromoteToLeader</span>()</div>
-<div class="block">Checks if this role can promote members to leader.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can promote to leader</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canKickOffline()">
 <h3>canKickOffline</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canKickOffline</span>()</div>
-<div class="block">Checks if this role can kick offline members.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can kick offline members</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canRenameClan()">
 <h3>canRenameClan</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canRenameClan</span>()</div>
-<div class="block">Checks if this role can rename the clan.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can rename the clan</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canDisband()">
 <h3>canDisband</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canDisband</span>()</div>
-<div class="block">Checks if this role can disband the clan.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can disband the clan</dd>
-</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canSetPrivatePublic()">
 <h3>canSetPrivatePublic</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">canSetPrivatePublic</span>()</div>
-<div class="block">Checks if this role can change the clan's privacy settings.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true if this role can set privacy settings</dd>
-</dl>
 </section>
 </li>
 </ul>

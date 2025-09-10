@@ -123,16 +123,29 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../data/Clan.html" title="class in net.crisis.crisisMod.clans.data">Clan</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadClans()" class="member-name-link">loadClans</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">This method is for loading the last saved Clan data json file
+ call this if you need to get the last saved data or smth
+ gets automaticaly called on server start</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>,<wbr><a href="../relations/RelationRequest.html" title="class in net.crisis.crisisMod.clans.relations">RelationRequest</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadRequests()" class="member-name-link">loadRequests</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">This just loads the saved relation requests from the json file
+ this is also called on server start //TODO: check if the first UUID is really the sender</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#saveClans()" class="member-name-link">saveClans</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">This method is for saving all Clan data to a json file on the Server
+ Call this if you think a save is needed, this is automaticaly called on Server shutdown</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#saveRequests()" class="member-name-link">saveRequests</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">This method saves all clan relation requests to a json file
+ this is also called on server shutdown</div>
+</div>
 </div>
 </div>
 </div>
@@ -182,24 +195,41 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="saveClans()">
 <h3>saveClans</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">saveClans</span>()</div>
+<div class="block">This method is for saving all Clan data to a json file on the Server
+ Call this if you think a save is needed, this is automaticaly called on Server shutdown</div>
 </section>
 </li>
 <li>
 <section class="detail" id="loadClans()">
 <h3>loadClans</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../data/Clan.html" title="class in net.crisis.crisisMod.clans.data">Clan</a>&gt;</span>&nbsp;<span class="element-name">loadClans</span>()</div>
+<div class="block">This method is for loading the last saved Clan data json file
+ call this if you need to get the last saved data or smth
+ gets automaticaly called on server start</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A list of all Clan objects</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="saveRequests()">
 <h3>saveRequests</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">saveRequests</span>()</div>
+<div class="block">This method saves all clan relation requests to a json file
+ this is also called on server shutdown</div>
 </section>
 </li>
 <li>
 <section class="detail" id="loadRequests()">
 <h3>loadRequests</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>,<wbr><a href="../relations/RelationRequest.html" title="class in net.crisis.crisisMod.clans.relations">RelationRequest</a>&gt;&gt;</span>&nbsp;<span class="element-name">loadRequests</span>()</div>
+<div class="block">This just loads the saved relation requests from the json file
+ this is also called on server start //TODO: check if the first UUID is really the sender</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a map with the UUIDs of the Requester clans with a Map inside that holds the reciver Clan and the request</dd>
+</dl>
 </section>
 </li>
 </ul>
